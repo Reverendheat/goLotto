@@ -10,7 +10,6 @@ type Lottery struct {
 	stateNumbers  [5]int
 	playerNumbers [5]int
 	rounds        int
-	winner        bool
 }
 
 func (l Lottery) play() {
@@ -66,7 +65,6 @@ func main() {
 	}
 
 	player := Lottery{
-		//stateNumbers:  [5]int{randomStateNumbers[0], randomStateNumbers[1], randomStateNumbers[2], randomStateNumbers[3], randomStateNumbers[4]},
 		playerNumbers: [5]int{playerIntInput[0], playerIntInput[1], playerIntInput[2], playerIntInput[3], playerIntInput[4]},
 		rounds:        playerRoundsInput,
 	}
